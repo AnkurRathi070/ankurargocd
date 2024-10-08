@@ -1,12 +1,12 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx-service
-spec:
-  selector:
-    app: nginx
-  type: LoadBalancer  # This will create a LoadBalancer in Azure
-  ports:
-  - protocol: TCP
-    port: 80          # The port that the service will expose
-    targetPort: 80     # The port the container listens to
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nginx-service
+# spec:
+#   selector:
+#     app: nginx
+#   type: LoadBalancer  # This will create a LoadBalancer in Azure
+#   ports:
+#   - protocol: TCP
+#     port: 80          # The port that the service will expose
+#     targetPort: 80     # The port the container listens to
