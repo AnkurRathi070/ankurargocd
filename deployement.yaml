@@ -5,15 +5,15 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: nginx
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
+      maxUnavailable: 2
+      maxSurge: 2
   template:
     metadata:
       labels:
