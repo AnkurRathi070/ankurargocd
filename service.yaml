@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Service
 metadata:
-  name: nginx-service
+  name: nginx
   lables:
     app: nginx
 spec:
